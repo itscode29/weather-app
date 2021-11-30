@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd6cb8e010.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-block" id="search-form">
+        <input
+          class="form-control mr-sm-1"
+          type="search"
+          placeholder="Search city"
+          aria-label="Search"
+          id="new-city"
+        />
+      </form>
+      <button class="btn btn-info" id="current-city">Current City</button>
+      <header class="current-city">
+        <h2 id="date">Wednesday 26th of October</h2>
+        <h3>17:00</h3>
+        <h1>London</h1>
+        <div class="temp">
+          <div class="current-temp"><span id="temperature">16</span>º</div>
+          <div class="row">
+            <div class="col-6 max"><span id="max">17</span>º</div>
+            <div class="col-6 min"><span id="min">13</span>º</div>
+          </div>
+          <!--<div class="row">
+            <div class="col-12 text-center">
+              <div class="btn-group" role="group">
+                <button class="c-btn btn" autofocus="on" id="celsius-button">
+                  ºC
+                </button>
+                <button class="f-btn btn btn-secondary" id="farenheit-button">
+                  ºF
+                </button>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-3 icon"><i class="fas fa-cloud"></i></div>
+        <div class="col-6 day" id="day-1">Thursday</div>
+        <div class="col-2 max">16</div>
+        <div class="col-1 min">12</div>
+      </div>
+      <div class="row">
+        <div class="col-3 icon"><i class="fas fa-cloud"></i></div>
+        <div class="col-6 day" id="day-2">Friday</div>
+        <div class="col-2 max">15</div>
+        <div class="col-1 min">9</div>
+      </div>
+      <div class="row">
+        <div class="col-3 icon"><i class="fas fa-cloud-rain"></i></div>
+        <div class="col-6 day" id="day-3">Saturday</div>
+        <div class="col-2 max">14</div>
+        <div class="col-1 min">9</div>
+      </div>
+      <div class="row">
+        <div class="col-3 icon"><i class="fas fa-cloud-sun"></i></div>
+        <div class="col-6 day" id="day-4">Sunday</div>
+        <div class="col-2 max">13</div>
+        <div class="col-1 min">8</div>
+      </div>
+      <div class="row">
+        <div class="col-3 icon"><i class="fas fa-cloud"></i></div>
+        <div class="col-6 day" id="day-5">Monday</div>
+        <div class="col-2 max">13</div>
+        <div class="col-1 min">8</div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
