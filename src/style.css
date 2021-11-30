@@ -20,6 +20,10 @@ h3 {
   font-size: 20px;
 }
 
+a {
+  color: #17a2b8;
+}
+
 .current-temp {
   font-size: 50px;
   text-align: center;
@@ -74,4 +78,10 @@ h3 {
 .btn {
   display: block;
   margin: 10px auto;
+}
+
+.footer {
+  color: #fff;
+  max-width: 360px;
+  margin: auto;
 }
